@@ -1,4 +1,4 @@
-('C:\\Users\\20220261\\Vibe 코딩\\build\\excel_to_pdf\\PYZ-00.pyz',
+('C:\\Users\\20220261\\Desktop\\Vibe 코딩\\build\\excel_to_pdf\\PYZ-00.pyz',
  [('__future__',
    'C:\\Users\\20220261\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\__future__.py',
    'PYMODULE'),

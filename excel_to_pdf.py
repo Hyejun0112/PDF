@@ -113,19 +113,22 @@ class App:
 
     # ✅ ✅ ✅ ✅ ✅ 핵심 (완전 수정)
     def add_folder(self):
-        folder = filedialog.askdirectory()
-        if not folder:
+        files = filedialog.askopenfilenames(
+            parent=self.root,
+            title="폴더 추가 - Excel/Word 파일 선택",
+            initialdir=self.output_folder or os.getcwd(),
+            filetypes=[
+                ("Office files", "*.xlsx *.xls *.docx *.doc"),
+                ("모든 파일", "*.*"),
+            ],
+        )
+        if not files:
             return
 
-        count = 0
+        for f in files:
+            self.add_file(f)
 
-        for root_dir, _, files in os.walk(folder):
-            for f in files:
-                if f.lower().endswith(SUPPORTED_EXT):
-                    self.add_file(os.path.join(root_dir, f))
-                    count += 1
-
-        messagebox.showinfo("안내", f"{count}개의 파일이 추가되었습니다")
+        messagebox.showinfo("안내", f"{len(files)}개의 파일이 추가되었습니다")
 
     def add_file(self, path):
         if path not in self.files:
