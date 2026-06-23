@@ -116,7 +116,89 @@
 
 ---
 
-## 4. 활용 방안 (성과품 연계)
+## 4. 회사 수주 PJT 사업주별 Vendor 선호 경향
+
+> **작성 기준(반드시 확인):** 아래는 ① 사업주 모회사의 Preferred Supplier/사내표준, ② 공개 레퍼런스, ③ 지역·산업별 설치기반 경향을 종합한 **추정치**다. 동일 사업주라도 PJT·시점·EPC에 따라 달라지므로 실제 적용 시 해당 PJT의 **AVL/I&C Spec을 반드시 재확인**할 것.
+
+### 4-1. 사우디 (Saudi Arabia)
+요약 — **Aramco 계열**: Honeywell(Experion) 최대 설치기반, 정유부문은 Yokogawa(CENTUM)도 강세 / **SABIC 계열**: Yokogawa를 Preferred Supplier로 지정(+Jubail 단지 Honeywell 다수). ESD=Triconex, MMS=Bently Nevada가 사실상 표준.
+
+| 사업주 | 모회사 / 성격 | 유력 Vendor 경향 |
+|---|---|---|
+| Al‑Jubail Petrochemical (KEMYA) | SABIC + ExxonMobil JV | Yokogawa / Honeywell |
+| Saudi Kayan Petrochemical | SABIC | Yokogawa / Honeywell |
+| SAMAPCO (Sahara & Ma'aden) | Sahara + Ma'aden JV | Yokogawa / Honeywell |
+| TASNEE | Saudi 민영 석화 | Honeywell / Yokogawa |
+| PetroRabigh | Aramco + Sumitomo JV | Honeywell / Yokogawa |
+| SADARA Chemical Co. | Aramco + Dow JV | Honeywell / Yokogawa (Dow는 Emerson 선호 경향) |
+| YASREF | Aramco + Sinopec JV | Honeywell / Yokogawa |
+| SATORP | Aramco + TotalEnergies JV | Honeywell / Yokogawa |
+| Saudi Arabian Mining Co. (Ma'aden) | 광물·인산(국영) | Honeywell / Yokogawa |
+
+※ 최종 결정 변수: Aramco Vendor Code/AVL 및 SAES·SAEP, SABIC Engineering Standard.
+
+### 4-2. 쿠웨이트 · 오만
+| 사업주 | 국가 | 유력 Vendor 경향 |
+|---|---|---|
+| Kuwait National Petroleum Co. (KNPC) | 쿠웨이트 | Honeywell 강세 / Yokogawa · Emerson |
+| Kuwait Oil Company (KOC) | 쿠웨이트 | Honeywell 강세 / Yokogawa · Emerson |
+| ORPIC (現 OQ) | 오만 | Honeywell / Yokogawa |
+
+### 4-3. 한국
+요약 — 한국 정유·석화는 Yokogawa·Honeywell 양강, Emerson도 사용. 발주처 표준에 따라 결정.
+
+| 사업주 | 성격 / 비고 | 유력 Vendor 경향 |
+|---|---|---|
+| S‑Oil Corporation | 정유·석화 (Saudi Aramco 자회사) | Yokogawa / Honeywell · Emerson |
+| LG화학 | 종합 석화 | Yokogawa / Honeywell |
+| Lotte Chemical | 종합 석화 | Yokogawa / Honeywell |
+| Yeochun NCC (YNCC) | NCC (한화·DL·롯데 JV) | Yokogawa / Honeywell |
+| DL Chemical | 석화 (DL그룹) | Yokogawa / Honeywell |
+| Tongsuh Petrochemical | Asahi Kasei 자회사 | Yokogawa (일본계 모회사 선호) |
+| INNOX LITHIUM | 2차전지 소재 | PLC 기반 + DCS(Yokogawa/Honeywell) 혼용 |
+| TLC | 석화 관련 | Yokogawa / Honeywell |
+
+### 4-4. 러시아 · CIS
+요약 — Sibur·Gazprom 계열 가스/석화 PJT는 Yokogawa 레퍼런스가 두텁고 Honeywell도 사용. 단 2022년 이후 서방 Vendor 철수·제재로 **로컬·중국 Vendor 대체 가능성 및 GOST 표준 준수**가 핵심 변수.
+
+| 사업주 | 모회사 / 성격 | 유력 Vendor 경향 · 비고 |
+|---|---|---|
+| NKNH (Nizhnekamskneftekhim) | Sibur 자회사 | Yokogawa / Honeywell · GOST 필수 |
+| LLC "Amur GCC" (AGCC) | Sibur (대형 GCC) | Yokogawa 등 · 제재 영향 주의 |
+| JSC Gazpromneft MNPZ | Gazprom Neft (모스크바 정유) | Honeywell / Yokogawa · GOST |
+| Gazpromneft | Gazprom Neft (국영계) | Honeywell / Yokogawa · GOST |
+| BCC (Baltic Chemical Complex) | RusGazDobycha/Gazprom 계열 | 본 L&L 대상 PJT · GOST(Steam compensation) 이슈 |
+
+### 4-5. 동남아 (말레이시아 · 필리핀)
+| 사업주 | 국가 / 모회사 | 유력 Vendor 경향 |
+|---|---|---|
+| Pengerang Intermediate Chemicals | 말레이 (Asahi Kasei+Petronas+Mitsubishi) | Yokogawa (일본계 JV) / Honeywell |
+| LG PETRONAS Chemicals Malaysia | 말레이 (LG Chem+Petronas JV) | Honeywell / Yokogawa |
+| Petron Malaysia Refining & Marketing | 말레이 (Petron) | Yokogawa / Honeywell |
+| Petron Corporation | 필리핀 | Yokogawa / Honeywell |
+| JG Summit Petrochemical Corp. | 필리핀 | Yokogawa / Honeywell |
+
+※ Petronas 계열은 PTS(Petronas Technical Standard)·AVL 운영. 일본계 JV는 Yokogawa 선호 경향.
+
+### 4-6. 미국 · 중국
+| 사업주 | 국가 / 성격 | 유력 Vendor 경향 |
+|---|---|---|
+| CPChem (Chevron Phillips Chemical) | 미국 석화 | Emerson(DeltaV) / Honeywell (북미 강세) |
+| DL Chemical / REXtac LLC JV | 미국(Texas) 석화 JV | Emerson / Honeywell |
+| Cariflex | 합성고무 (DL Chemical 소유) | Yokogawa / Honeywell (Plant 소재지 표준 영향) |
+| BASF Polyurethanes Chongqing | 중국 (BASF 자회사) | BASF 그룹표준 Siemens(PCS 7) / Emerson 경향 |
+
+※ 중국 내 다국적 JV(BASF 등)는 로컬 Vendor보다 모회사 글로벌 표준(Siemens/Emerson)을 따르는 경우가 많아, 중국 내수 로컬 우위(Supcon·Hollysys)와 구분할 것.
+
+### 종합 시사점
+- 중동(사우디·쿠웨이트·오만) PJT → **Honeywell·Yokogawa 2강 + 사업주 AVL** 핵심, ESD=Triconex/MMS=Bently Nevada 사실상 고정.
+- 한국·동남아·러시아 PJT → **Yokogawa 비중 높음**(일본계 모회사·가스석화 레퍼런스).
+- 북미(CPChem 등)→ Emerson, 중국 다국적 JV → Siemens/Emerson 등 모회사 표준 경향.
+- → 입찰 단계 1차 필터로 사용하되 **"모회사 표준 + PJT AVL" 2단 확인** 후 Vendor Logic 특성을 사전 반영.
+
+---
+
+## 5. 활용 방안 (성과품 연계)
 
 1. 입찰/Kick-off 단계에서 본 표를 활용해 **유력 Vendor 후보군**을 미리 좁힌다.
 2. 해당 Vendor의 Logic 설계 특성(Faceplate 기반 Valve 제어, Pump Start/Stop의 MCC 연계 등)을 사전 적용 → 불필요한 P&ID/Logic 작업 제거.
@@ -126,6 +208,8 @@
 
 ## 부록: 출처 (Sources)
 
+- [Yokogawa & SABIC Preferred Supplier / Co-innovation – Control.com](https://control.com/news/yokogawa-and-sabic-team-up-petrochemical-process-optimization/)
+- [Honeywell Process Solutions (Aramco·SABIC 설치기반) – Razz Middle East](https://razz.sa/en/instrumentation/honeywell-process)
 - [Distributed Control System Market – Intel Market Research](https://www.intelmarketresearch.com/distributed-contorl-system-market-24242)
 - [Distributed Control System Market – Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/distributed-control-system-market)
 - [China Chinese DCS Vendors Gain Local Market Share – Automation World](https://www.automationworld.com/products/control/news/13302870/china-chinese-dcs-vendors-gain-local-market-share)
